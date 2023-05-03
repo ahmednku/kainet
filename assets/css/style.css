@@ -107,7 +107,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #85bc3c !important;
   color: #fff;
 }
 
@@ -183,11 +183,12 @@ h6 {
   #hero {
     height: 100vh;
     text-align: center;
+    max-height: 880px;
   }
 
   #hero .animated {
     animation: none;
-  }
+  } 
 }
 
 @media (max-width: 768px) {
@@ -534,7 +535,7 @@ section {
   color: #fff;
 }
 .footer-box.pages ul li {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 .footer-area {
   padding: 50px 0;
@@ -585,13 +586,23 @@ section {
   color: #fff;
 }
 
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icons ul {
   list-style-type: none;
   display: flex;
+  padding-left: 0;
 }
 
 .social-icons ul li {
   margin-left: 1rem;
+}
+
+.social-icons ul li:first-child{
+  margin-left: 0;
 }
 
 .social-icons ul li a {
@@ -610,21 +621,6 @@ section {
   top: 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .social-icons {
-    text-align: left;
-    margin-left: 20px;
-  }
-  .payments-methods {
-    margin-left: 1.5rem;
-  }
-}
-
-.payments-methods img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
 .social-icons ul li:hover a {
   color: var(--green-color);
 }
@@ -670,4 +666,13 @@ section {
 .contact-form,
 .info {
   border-radius: 5px;
+}
+
+.desc-section p{
+  text-align: justify;
+}
+@media(max-width: 992px){
+  .desc-section .img-div{
+    text-align: center;
+  }
 }
