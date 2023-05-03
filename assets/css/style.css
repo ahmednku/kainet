@@ -494,7 +494,7 @@ section {
   padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 50px;
+  border-radius: 7px;
 }
 
 .contact .contact-form button[type="submit"]:hover {
@@ -649,7 +649,7 @@ section {
 }
 
 .card-text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .card img,
